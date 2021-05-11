@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +11,41 @@
 
         var produto = parseInt(prompt("Escolha seu produto \n1)iPhone \n2)MacBook \n3)iMac"))
 
-        switch(produto){
-        case 1:
-        iPhone = 500
-        break
+        switch (produto) {
+            case 1:
+                iPhone = 500
+                break
 
-        case 2:
-        MacBook = 550
-        break
+            case 2:
+                MacBook = 550
+                break
 
-        case 3:
-        iMac = 600
+            case 3:
+                iMac = 600
         }
 
         var pagamento = parseInt(prompt("Informe a forma de pagamento \n1)A Vista \n2)A prazo"))
 
-        if(produto = 1 && pagamento ==1){
-            alert("O iPhone terá um desconto de 10%, o total sera de R$"+(iPhone*0.9))
-        }else if(produto = 1 && pagamento == 2){
-            alert("O iPhone sairá por R$"+(iPhone))
-        }else if(produto = 2 && pagamento == 1){
-            alert("O MacBook terá um desconto de 10%, o total será de R$"+(MacBook*0.9))
-        }else if(produto = 2 && pagamento == 2){
-            alert("O MacBook sairá por R$"+(MacBook))
+        if (produto == 1 && pagamento == 1) {
+            alert("O iPhone terá um desconto de 10%, o total sera de R$" + (iPhone * 0.9))
+        } else if (produto == 1 && pagamento == 2) {
+            alert("O iPhone sairá por R$" + (iPhone))
+        } else if (produto == 2 && pagamento == 1) {
+            alert("O MacBook terá um desconto de 10%, o total será de R$" + (MacBook * 0.9))
+        } else if (produto == 2 && pagamento == 2) {
+            alert("O MacBook sairá por R$" + (MacBook))
+        } else if (produto == 3 && pagamento == 1) {
+            alert("O iMac sairá por R$" + (iMac * 0.9))
+        } else if (produto == 3 && pagamento == 2) {
+            alert("O iMac sairá por R$" + (iMac))
         }
 
     </script>
 
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
