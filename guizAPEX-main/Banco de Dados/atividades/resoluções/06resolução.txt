@@ -1,0 +1,63 @@
+1) Desenvolver uma tabela chamada autores com as seguintes características:
+idAutor Inteiro auto incrementado e chave-primária
+nomeAutor Varchar de 50
+	create table autores(
+	idAutor int not null unique auto_increment,
+	nomeAutor varchar(50),
+	primary key(idAutor)
+);
+
+2) Crie mais uma tabela chamada generos:
+idGenero inteiro auto incrementado e chave-primária
+nomeGenero Varchar de 30 caracteres
+create table generos(
+	idGenero int not null unique auto_increment,
+  	nomeGenero varchar (30),
+    primary key (idGenero)
+);
+
+3) Crie outra tabela chamada livros:
+idLivro inteiro auto incrementado e chave-primária
+nomeLivro Varchar de 50 caracteres
+idAutor Inteiro chave-estrangeira
+idGenero inteiro chave-estrangeira
+create table livros(
+	idLivro int not null unique auto_increment,
+	nomeLivro varchar (50),
+	primary key(idLivro),
+	idAutor int,
+	idGenero int,
+	foreign key (idAutor) references características(idAutor),
+	foreign key (idGenero) references generos(idGenero)  
+);
+
+4) Adicione três autores de sua preferência, cinco gêneros e cadastre quatro livros, interligando esses livros com os autores já cadastrados e os gêneros.
+insert into autores (nomeAutor) values 
+("autor01"),
+("autor02"),
+("autor03");
+ 
+5) insert into generos (nomeGenero) values 
+("genero01"),
+("genero02"),
+("genero03"),
+("genero04"),
+("genero05");
+
+6) insert into livros (nomeLivro,idAutor,idGenero) values
+("livro01",2,2),
+("livro02",3,4),
+("livro03",1,5),
+("livro04",2,3);
+
+7) Após criar essas três tabelas exiba os seguintes dados: Nome do livro, nome do autor e nome do gênero do livro.
+
+select 
+	livros.nomeLivro,
+	autores.nomeAutor,
+	generos.nomeGenero
+	from livros
+	inner join autores
+	on livros.idAutor = autores.idAutor
+	inner join generos
+	on livros.idGenero = generos.idGenero;

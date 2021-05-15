@@ -1,0 +1,42 @@
+1) Criar tabela uzuarios (o erro foi de escrita foi proposital)
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(20),
+    sobrenome VARCHAR(50),
+    idade INT
+
+
+2) Alterar o nome da tabela uzuarios para usuarios (https://www.mysqltutorial.org/mysql-rename-table/)
+
+3) Adicionar uma coluna chamada email do tipo varchar com tamanho de 40 caracteres
+
+4) Remover a coluna sobrenome
+
+5) Cadastrar os seguintes dados:
+Vanessa, 16, vanessa.rosa@gmail.com
+Adailton, 22, adailton.maas@yahoo.com.br
+Andressa, 36, dessa.simas@uol.com.br
+Mayra, 24, mayra.antunes@gmail.com
+Cristiane, 14, criss.maya@gmail.com
+Leonardo, 15, leo.kopff@terra.com.br
+Carina, 27, carina.almeida@gmail.com
+Clóvis, 29, clovis.simao@hotmail.com
+Gabriela, 23, gabriela.braga@live.com
+Cibele, null, cibele.lins@uol.com.br
+
+6) Exibir o número de usuários
+
+7) Exibir a quantidade de usuários menores de 18 anos
+
+8) Quantos usuários possuem o e-mail do gmail 
+
+9) Retornar o nome da pessoa com a maior idade 
+
+10) Retornar o nome do do usuário, onde a idade seja null 
+
+11) Alterar todas as idades que estejam null para 27
+
+12) Deletar todos os usuários onde a idade seja inferior a 18 anos
+
+13) Excluir os dados da tabela usuarios e reiniciar a contagem da coluna código.
+
+14) Excluir a tabela usuarios

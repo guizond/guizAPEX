@@ -1,0 +1,23 @@
+Banco de dados: Local para armazenar informações.
+
+SGBD (Sistema Gerenciador de Banco de Dados).
+	* Oracle
+	* SQL Server
+	* MySQL
+	* PostgreSQL
+
+DBA (Database Administrator): Responsável por trabalhar com o banco de dados.
+
+SQL (Structure Query Language): Linguagem padrão dos SGBDs.
+	DDL (Data Define Language): Criar, alterar e excluir tabelas/bases.
+	DML (Data Manipulation Language): Selecionar, cadastrar, alterar, excluir dados.
+
+Relacionamentos
+	Relacional: Há dependência de informações
+	Não relacional: Não há dependência dos dados (mais performático)
+
+Base de dados: Local onde ficarão salvas as tabelas
+
+Tabela: Local onde ficarão dados específicos (clientes, fornecedores, produtos...)
+
+Primary Key (chave-primária): Coluna que não terá repetição de valores.

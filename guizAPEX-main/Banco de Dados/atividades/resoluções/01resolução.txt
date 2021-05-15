@@ -1,0 +1,67 @@
+1) Criar uma nova tabela chamada alunos com as características:
+create table alunos(
+	nome varchar(30),
+    idade int,
+    nota1 double,
+    nota2 double
+);
+
+2) Inserir dados
+insert into alunos values
+("Ana", 15, 7.5, 8.2),
+("Lucas",null, 9, 8.6),
+("Vanessa", 16, 6.6, 7.1),
+("Leonardo", 15, 5, 4.5),
+("Dênis", 17, 10, 10);
+
+3) Selecione todos os dados (colunas e alunos)
+select * from alunos;
+
+4) Selecionar nome, nota1, nota2 e exibir a média
+select nome, nota1, nota2, (nota1+nota2)/2 from alunos;
+
+5) Exibir o nome, média e situação (aprovado ou reprovado)
+select 
+	nome, 
+    round((nota1+nota2)/2, 1) as "média", 
+    if((nota1+nota2)/2 >= 7, "Aprovado", "Reprovado") as "situação"
+from alunos;
+
+6) Selecione todos os alunos com idade inferior a 16 anos.
+SELECT * FROM alunos WHERE idade < 16;
+
+7) Selecione todos os alunos que tenham idade nula
+SELECT * FROM alunos WHERE idade IS NULL;
+
+8) Exiba os dados dos alunos em ordem decrescente através do nome
+select * from alunos ORDER BY nome DESC;
+
+9) Exiba todos os alunos, onde seu nome contenham a letra L
+select nome from alunos where nome like "%l%";
+
+10) Exiba todos os alunos que iniciem com a letra A
+select nome from alunos where nome like "a%";
+
+11) Exibir todos os alunos que terminam com A
+select nome from alunos where nome like "%a";
+
+12) Contar quantos registros existem na tabela
+select count(*) from alunos;
+
+13) Exibe a soma das idades
+select sum(idade) from alunos;
+
+15) Exiba a maior idade
+select max(idade) from alunos;
+
+16) Exiba a menor idade
+select min(idade) from alunos;
+
+17) Altere a idade para 15 de todos os alunos com idade nula
+update alunos set idade = 15 where idade is null;
+
+18) Exclua todos os alunos com idade superior a 15
+delete from alunos where idade > 15;
+
+19) Excluir a tabela alunos
+drop table alunos;

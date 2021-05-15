@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mensagem(){
+            alert("Boas Compras!")
+        }
+
+        function selecionar(e){
+            var valor = parseInt(e.value)
+
+            switch(valor){
+                case 1:
+                alert("R$500,00")
+                break
+
+                case 2:
+                alert("R$550,00")
+                break
+
+                case 3:
+                alert("R$600,00")
+                break
+
+                default:
+                alert("Selecione uma opção")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <hr>
+
+    <select onchange="selecionar(this)">
+        <option value="0">Escolha uma opção</option>
+        <option value="1">iPhone</option>
+        <option value="2">MacBook</option>
+        <option value="3">iMac</option>
+    </select>
+</body>
+</html>

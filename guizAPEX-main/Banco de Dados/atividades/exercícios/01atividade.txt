@@ -1,0 +1,44 @@
+1) Criar uma nova tabela chamada alunos com as características:
+	nome varchar(30),
+    idade int,
+    nota1 double,
+    nota2 double
+
+2) Inserir dados
+("Ana", 15, 7.5, 8.2);
+("Lucas", null, 9, 8.6);
+("Vanessa", 16, 6.6, 7.1),
+("Leonardo", 15, 5, 4.5),
+("Dênis", 17, 10, 10);
+
+3) Selecione todos os dados (colunas e alunos)
+
+4) Selecionar nome, nota1, nota2 e exibir a média
+
+5) Exibir o nome, média e situação (aprovado ou reprovado)
+
+6) Selecione todos os alunos com idade inferior a 16 anos.
+
+7) Selecione todos os alunos que tenham idade nula
+
+8) Exiba os dados dos alunos em ordem decrescente através do nome
+
+9) Exiba todos os alunos, onde seu nome contenham a letra L
+
+10) Exiba todos os alunos que iniciem com a letra A
+
+11) Exibir todos os alunos que terminam com A
+
+12) Contar quantos registros existem na tabela
+
+13) Exibe a soma das idades (https://www.w3schools.com/sql/sql_count_avg_sum.asp)
+
+15) Exiba a maior idade
+
+16) Exiba a menor idade
+
+17) Altere a idade para 15 de todos os alunos com idade nula
+
+18) Exclua todos os alunos com idade superior a 15
+
+19) Excluir a tabela alunos
